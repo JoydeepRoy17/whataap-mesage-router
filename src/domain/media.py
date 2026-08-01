@@ -29,8 +29,8 @@ class MediaEngine:
 
     # Maps the media_type value in messages.csv to (csv filename, id column, path column)
     _MEDIA_REGISTRY: Dict[str, tuple] = {
-        "image": ("images.csv", "media_id", "file_path"),
-        "voice": ("voice_notes.csv", "media_id", "file_path"),
+        "image": ("images.csv", "image_id", "file_path"),
+        "voice": ("voice_notes.csv", "voice_note_id", "file_path"),
     }
 
     def __init__(self, loader: CSVLoader, media_root: str = "dataset") -> None:

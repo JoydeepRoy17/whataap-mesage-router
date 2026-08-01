@@ -32,14 +32,14 @@ def media_env(tmp_path):
 
     # images catalogue
     (d / "images.csv").write_text(
-        "media_id,file_path\n"
+        "image_id,file_path\n"
         "img_001,images/photo.jpg\n"
         "img_999,images/deleted.jpg\n"
     )
 
     # voice notes catalogue
     (d / "voice_notes.csv").write_text(
-        "media_id,file_path\n"
+        "voice_note_id,file_path\n"
         "vn_001,voice/note.ogg\n"
     )
 
