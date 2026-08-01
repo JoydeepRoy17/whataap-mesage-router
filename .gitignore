@@ -1,0 +1,25 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Caching & Outputs
+cache/
+outputs/
+logs/
+*.log
+
+# Dataset (Ignore raw data unless small)
+# dataset/*.csv
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,57 @@
+# ==============================================================================
+# WhatsApp Message Router AI - Requirements and Setup
+# ==============================================================================
+# 
+# Python Version Requirement:
+# Python 3.10 or higher is strictly recommended to leverage modern type hinting, 
+# pattern matching, and asynchronous features for robust production code.
+#
+# Project Setup Instructions & Installation Commands:
+# 1. Navigate to the project root directory.
+# 2. Create an isolated virtual environment:
+#    python -m venv venv
+# 3. Activate the virtual environment:
+#    - Windows: venv\Scripts\activate
+#    - Linux/Mac: source venv/bin/activate
+# 4. Upgrade pip (recommended):
+#    pip install --upgrade pip
+# 5. Install the dependencies listed in this file:
+#    pip install -r requirements.txt
+#
+# ==============================================================================
+# Core Dependencies and Explanations
+# ==============================================================================
+
+# 1. Data Manipulation & Analysis
+# Required for efficiently loading, querying, and transforming the CSV datasets.
+# Pandas is the industry standard for handling tabular data in memory.
+pandas>=2.0.0
+
+# 2. Data Validation & Domain Modeling
+# Required for strictly typing our domain entities (Message, User, Group, Business).
+# Pydantic ensures data integrity and helps enforce SOLID principles at the data layer.
+pydantic>=2.0.0
+
+# 3. AI & LLM Integration
+# Required for interacting with Large Language Models (LLMs) to perform complex 
+# semantic classification and text routing when heuristic rules are insufficient.
+openai>=1.0.0
+
+# 4. Environment Configuration
+# Required for securely loading API credentials, API endpoints, and environment 
+# variables from a local '.env' file without hardcoding them in the source.
+python-dotenv>=1.0.0
+
+# ==============================================================================
+# Development & Testing Dependencies
+# ==============================================================================
+
+# 5. Unit Testing Framework
+# Required to write, discover, and execute automated unit tests. Ensures that 
+# every module is independently testable and accurate, as required by the rules.
+pytest>=7.4.0
+
+# 6. Logging and CLI Formatting
+# Required for creating highly readable, colored, and formatted terminal logs. 
+# Helps in debugging and providing a production-quality developer experience.
+rich>=13.0.0
